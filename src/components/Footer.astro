@@ -1,0 +1,217 @@
+<footer class="footer">
+    <div class="container container-footer">
+        <div class="menu-footer">
+            <div class="contact-info">
+                <p class="title-footer">Información de Contacto</p>
+                <ul>
+                    <li>Dirección: Isla de Taquile, Lago Titicaca, Puno, Perú</li>
+                    <li>Teléfono: 123-456-7890</li>
+                    <li>Fax: 55555300</li>
+                    <li>Email: taquile@support.com</li>
+                </ul>
+                <div class="social-icons">
+                    <span class="facebook"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="twitter"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="youtube"><i class="fa-brands fa-youtube"></i></span>
+                    <span class="pinterest"><i class="fa-brands fa-pinterest-p"></i></span>
+                    <span class="instagram"><i class="fa-brands fa-instagram"></i></span>
+                </div>
+            </div>
+
+            <div class="information">
+                <p class="title-footer">Información</p>
+                <ul>
+                    <li><a href="#">Acerca de Nosotros</a></li>
+                    <li><a href="#">Información Delivery</a></li>
+                    <li><a href="#">Politicas de Privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                    <li><a href="#">Contactános</a></li>
+                </ul>
+            </div>
+
+            <div class="my-account">
+                <p class="title-footer">Mi cuenta</p>
+                <ul>
+                    <li><a href="#">Mi cuenta</a></li>
+                    <li><a href="#">Historial de ordenes</a></li>
+                    <li><a href="#">Lista de deseos</a></li>
+                    <li><a href="#">Boletín</a></li>
+                    <li><a href="#">Reembolsos</a></li>
+                </ul>
+            </div>
+
+            <div class="newsletter">
+                <p class="title-footer">Boletín informativo</p>
+                <div class="content">
+                    <p>Suscríbete a nuestros boletines ahora y mantente al día con nuevas colecciones y ofertas exclusivas.</p>
+                    <input type="email" placeholder="Ingresa el correo aquí...">
+                    <button>Suscríbete</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Desarrollado por Programación para el mundo &copy; 2024</p>
+            <img src="img/payment.png" alt="Pagos">
+        </div>
+    </div>
+</footer>
+
+<style>
+    .footer {
+        background-color: var(--primary-color);
+    }
+
+    .container-footer {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        padding: 3rem;
+    }
+
+    .menu-footer {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr) 30rem;
+        gap: 3rem;
+        justify-items: center;
+    }
+
+    .title-footer {
+        font-weight: 600;
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    .contact-info,
+    .information,
+    .my-account,
+    .newsletter {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .contact-info ul,
+    .information ul,
+    .my-account ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .contact-info ul li,
+    .information ul li,
+    .my-account ul li {
+        list-style: none;
+        color: #fff;
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+
+    .information ul li a,
+    .my-account ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .information ul li a:hover,
+    .my-account ul li a:hover {
+        color: var(--dark-color);
+    }
+
+    .social-icons {
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .social-icons span {
+        border-radius: 50%;
+        width: 3rem;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .social-icons span i {
+        color: #fff;
+        font-size: 1.2rem;
+    }
+
+    .facebook {
+        background-color: #3b5998;
+    }
+
+    .twitter {
+        background-color: #00acee;
+    }
+
+    .youtube {
+        background-color: #c4302b;
+    }
+
+    .pinterest {
+        background-color: #c8232c;
+    }
+
+    .instagram {
+        background: linear-gradient(#405de6, #833ab4, #c13584, #e1306c, #fd1d1d, #f56040, #fcaf45);
+    }
+
+    .content p {
+        font-size: 1.4rem;
+        color: #fff;
+        font-weight: 300;
+    }
+
+    .content input {
+        outline: none;
+        background: none;
+        border: none;
+        border-bottom: 2px solid #d2b495;
+        cursor: pointer;
+        padding: 0.5rem 0 1.2rem;
+        color: var(--dark-color);
+        display: block;
+        margin-bottom: 3rem;
+        margin-top: 2rem;
+        width: 100%;
+        font-family: inherit;
+    }
+
+    .content input::-webkit-input-placeholder {
+        color: #eee;
+    }
+
+    .content button {
+        border: none;
+        background-color: #000;
+        color: #fff;
+        text-transform: uppercase;
+        padding: 1rem 3rem;
+        border-radius: 2rem;
+        font-size: 1.4rem;
+        font-family: inherit;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .content button:hover {
+        background-color: var(--background-color);
+        color: var(--primary-color);
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2rem;
+        border-top: 1px solid #d2b495;
+    }
+
+    .copyright p {
+        font-weight: 400;
+        font-size: 1.6rem;
+    }
+
+</style>
