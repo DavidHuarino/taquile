@@ -4,6 +4,17 @@ import { Image } from 'astro:assets';
 import taquileTour from '../../public/images/tour-taquile.jpg';
 import alojamientoTaquile from '../../public/images/alojamiento-taquile.jpg';
 import artesaniasTaquile1 from '../../public/images/artesanias-taquile1.jpg';
+import galleryTaquile1 from '../../public/images/gallery-taquile1.jpg'
+import galleryTaquile2 from '../../public/images/gallery-taquile2.jpg';
+import galleryTaquile3 from '../../public/images/gallery-taquile3.jpg';
+import galleryTaquile4 from '../../public/images/gallery-taquile4.jpg';
+import galleryTaquile5 from '../../public/images/gallery-taquile5.jpg';
+import blog1 from '../../public/images/blog-1.jpg';
+import blog2 from '../../public/images/blog-2.jpg';
+import blog3 from '../../public/images/blog-3.jpg';
+
+//import hola from '../../public/images/ga'
+
 ---
 <main class="main-content">
     <section class="container container-features">
@@ -150,11 +161,16 @@ import artesaniasTaquile1 from '../../public/images/artesanias-taquile1.jpg';
     </section>
 
     <section class="gallery">
-        <img src="" alt="Galería Taquile 1" class="gallery-img-1">
-        <img src="../../public/images/gallery-taquile2.jpg" alt="Galería Taquile 2" class="gallery-img-2">
+        <Image src={galleryTaquile1} alt="Galería Taquile 1" class="gallery-img-1" />
+        <!--<img src="../../public/images/gallery-taquile2.jpg" alt="Galería Taquile 2" class="gallery-img-2">
         <img src="../../public/images/gallery-taquile3.jpg" alt="Galería Taquile 3" class="gallery-img-3">
         <img src="../../public/images/gallery-taquile4.jpg" alt="Galería Taquile 4" class="gallery-img-4">
-        <img src="../../public/images/gallery-taquile5.jpg" alt="Galería Taquile 5" class="gallery-img-5">
+        <img src="../../public/images/gallery-taquile5.jpg" alt="Galería Taquile 5" class="gallery-img-5"> -->
+        <Image src={galleryTaquile2} alt='Galeria taquile 2' class='gallery-img-2' />
+        <Image src={galleryTaquile3} alt='Galeria taquile 3' class='gallery-img-3' />
+        <Image src={galleryTaquile4} alt='Galeria taquile 4' class='gallery-img-4' />
+        <Image src={galleryTaquile5} alt='Galeria taquile 5' class='gallery-img-5' />
+
     </section>
 
     <section class="container blogs">
@@ -163,7 +179,8 @@ import artesaniasTaquile1 from '../../public/images/artesanias-taquile1.jpg';
         <div class="container-blogs">
             <div class="card-blog">
                 <div class="container-img">
-                    <img src="../../public/images/blog-taquile-1.jpg" alt="Blog Taquile 1">
+                    <!-- <img src="../../public/images/blog-taquile-1.jpg" alt="Blog Taquile 1">-->
+                    <Image src={blog1} alt='Blog taquile 1' />
                     <div class="button-group-blog">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
                         <span><i class="fa-solid fa-link"></i></span>
@@ -178,7 +195,8 @@ import artesaniasTaquile1 from '../../public/images/artesanias-taquile1.jpg';
             </div>
             <div class="card-blog">
                 <div class="container-img">
-                    <img src="../../public/images/blog-taquile-2.jpg" alt="Blog Taquile 2">
+                    <!--<img src="../../public/images/blog-taquile-2.jpg" alt="Blog Taquile 2"> -->
+                    <Image src={blog2} alt='Blog taquile 2' />
                     <div class="button-group-blog">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
                         <span><i class="fa-solid fa-link"></i></span>
@@ -193,7 +211,8 @@ import artesaniasTaquile1 from '../../public/images/artesanias-taquile1.jpg';
             </div>
             <div class="card-blog">
                 <div class="container-img">
-                    <img src="../../public/images/blog-taquile-3.jpg" alt="Blog Taquile 3">
+                    <Image src={blog3} alt='Blog taquile 3' />
+                    <!-- <img src="../../public/images/blog-taquile-3.jpg" alt="Blog Taquile 3">-->
                     <div class="button-group-blog">
                         <span><i class="fa-solid fa-magnifying-glass"></i></span>
                         <span><i class="fa-solid fa-link"></i></span>
