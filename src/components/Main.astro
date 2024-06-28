@@ -1,3 +1,6 @@
+---
+import Card from '../components/Card.astro';
+---
 <main class="main-content">
     <section class="container container-features">
         <div class="card-feature">
@@ -59,29 +62,12 @@
 
         <div class="container-products">
             <!-- Producto 1 -->
-            <div class="card-product">
-                <div class="container-img">
-                    <img src="../../public/images/tour-taquile.jpg" alt="Tour Taquile">
-                    <span class="discount">-10%</span>
-                    <div class="button-group">
-                        <span><i class="fa-regular fa-eye"></i></span>
-                        <span><i class="fa-regular fa-heart"></i></span>
-                        <span><i class="fa-solid fa-code-compare"></i></span>
-                    </div>
-                </div>
-                <div class="content-card-product">
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                    <h3>Tour Taquile</h3>
-                    <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
-                    <p class="price">$50 <span>$55</span></p>
-                </div>
-            </div>
+            <Card 
+                imagePath='/src/assets/tour-taquile.jpg'
+                altText='Tour Taquile'
+                name='Taquile'
+                age={20}
+            />
             <!-- Producto 2 -->
             <div class="card-product">
                 <div class="container-img">
@@ -133,7 +119,7 @@
     </section>
 
     <section class="gallery">
-        <img src="../../public/images/gallery-taquile1.jpg" alt="Galería Taquile 1" class="gallery-img-1">
+        <img src="" alt="Galería Taquile 1" class="gallery-img-1">
         <img src="../../public/images/gallery-taquile2.jpg" alt="Galería Taquile 2" class="gallery-img-2">
         <img src="../../public/images/gallery-taquile3.jpg" alt="Galería Taquile 3" class="gallery-img-3">
         <img src="../../public/images/gallery-taquile4.jpg" alt="Galería Taquile 4" class="gallery-img-4">
