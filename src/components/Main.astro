@@ -1,5 +1,7 @@
 ---
 import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
+import taquileTour from '../../public/images/tour-taquile.jpg';
 ---
 <main class="main-content">
     <section class="container container-features">
@@ -62,12 +64,13 @@ import Card from '../components/Card.astro';
 
         <div class="container-products">
             <!-- Producto 1 -->
-            <Card 
-                imagePath='/src/assets/tour-taquile.jpg'
+            <!--<Card 
+                imagePath='src/assets/alojamiento-taquile.jpg'
                 altText='Tour Taquile'
                 name='Taquile'
                 age={20}
-            />
+            />-->
+            <Image src={taquileTour} alt='taquile tour' />
             <!-- Producto 2 -->
             <div class="card-product">
                 <div class="container-img">

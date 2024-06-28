@@ -11,13 +11,9 @@ interface Props {
 
 const { imagePath, altText, name, age } = Astro.props;
 const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/*.{jpeg,jpg,png,gif}');
+console.log("veamos las fotos", images);
 if (!images[imagePath]) throw new Error(`"${imagePath}" does not exist in glob: "src/assets/*.{jpeg,jpg,png,gif}"`);
 ---
-<div class="card">
-    <h2>{name}</h2>
-    <p>Edad: {age}</p>
-    <Image src={images[imagePath]()} alt={altText} />
-</div>
 <div class="card-product">
 	<div class="container-img">
 		<!--<img src="../../public/images/tour-taquile.jpg" alt="Tour Taquile">-->
