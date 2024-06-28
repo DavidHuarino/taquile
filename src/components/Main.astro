@@ -2,6 +2,8 @@
 import Card from '../components/Card.astro';
 import { Image } from 'astro:assets';
 import taquileTour from '../../public/images/tour-taquile.jpg';
+import alojamientoTaquile from '../../public/images/alojamiento-taquile.jpg';
+import artesaniasTaquile1 from '../../public/images/artesanias-taquile1.jpg';
 ---
 <main class="main-content">
     <section class="container container-features">
@@ -70,11 +72,36 @@ import taquileTour from '../../public/images/tour-taquile.jpg';
                 name='Taquile'
                 age={20}
             />-->
-            <Image src={taquileTour} alt='taquile tour' />
+            <!-- <Image src={taquileTour} alt='taquile tour' />-->
             <!-- Producto 2 -->
             <div class="card-product">
                 <div class="container-img">
-                    <img src="../../public/images/alojamiento-taquile.jpg" alt="Alojamiento Taquile">
+                    <!--<img src="../../public/images/tour-taquile.jpg" alt="Tour Taquile">-->
+                    <Image src={taquileTour} alt='tour taquile' />
+                    <span class="discount">-10%</span>
+                    <div class="button-group">
+                        <span><i class="fa-regular fa-eye"></i></span>
+                        <span><i class="fa-regular fa-heart"></i></span>
+                        <span><i class="fa-solid fa-code-compare"></i></span>
+                    </div>
+                </div>
+                <div class="content-card-product">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Tour Taquile</h3>
+                    <span class="add-cart"><i class="fa-solid fa-basket-shopping"></i></span>
+                    <p class="price">$50 <span>$55</span></p>
+                </div>
+            </div>
+            <div class="card-product">
+                <div class="container-img">
+                    <!-- <img src="../../public/images/alojamiento-taquile.jpg" alt="Alojamiento Taquile">-->
+                    <Image src={alojamientoTaquile} alt='alojamiento taquile' />
                     <span class="discount">-15%</span>
                     <div class="button-group">
                         <span><i class="fa-regular fa-eye"></i></span>
@@ -98,7 +125,8 @@ import taquileTour from '../../public/images/tour-taquile.jpg';
             <!-- Producto 3 -->
             <div class="card-product">
                 <div class="container-img">
-                    <img src="../../public/images/artesanias-taquile1.jpg" alt="Artesanías Taquile">
+                    <!-- <img src="../../public/images/artesanias-taquile1.jpg" alt="Artesanías Taquile">-->
+                    <Image src={artesaniasTaquile1} alt='artesania taquile' />
                     <div class="button-group">
                         <span><i class="fa-regular fa-eye"></i></span>
                         <span><i class="fa-regular fa-heart"></i></span>
